@@ -1,0 +1,20 @@
+<div
+    #scrollMe
+    class="chat-container"
+    (wheel)="scrollHandler($event)"
+>
+    <p
+        class="row"
+        *ngFor="let s of data$"
+    >
+        {{s}}
+    </p>
+
+</div>
+
+<div
+    id="status"
+    [ngStyle]="{'background-color' : autoScroll? 'limegreen':'red'}"
+>
+    Autoscroll: {{autoScroll}}
+</div>
