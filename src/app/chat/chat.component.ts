@@ -1,5 +1,5 @@
 import { DataService } from './../services/data.service';
-import * as moment from 'moment';
+const moment = require('moment');
 import {
   Component,
   OnInit,
